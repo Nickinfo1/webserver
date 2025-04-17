@@ -27,7 +27,7 @@ class Main {
     });
     //app.use(errorMiddleware);
 
-    app.listen(port, () => {
+    app.listen(Number(port), "127.0.0.1", () => {
       console.log(`[server]: Server is running at ${process.env.CLIENT_URL2}`);
     });
   }
